@@ -17,6 +17,30 @@ As time goes on, you cycle through the seasons and have a strange feeling that m
 **FYI** : Recent studies have shown that temperature and weather can significantly affect crime rates.
 
 ## Steps
+
+### Get the Weather Data
+- Scrapes lowest temperature in LA and the date it occurred for each year from 2010-2018 from [Current Results - Low Temperatures](https://www.currentresults.com/Yearly-Weather/USA/CA/Los-Angeles/extreme-annual-los-angeles-low-temperature.php) using Splinter and Beautiful Soup. 
+
+- Scrapes highest temperature in LA and the date it occurred for each year from 2010-2018 from [Current Results - High Temperatures](https://www.currentresults.com/Yearly-Weather/USA/CA/Los-Angeles/extreme-annual-los-angeles-high-temperature.php) using Splinter and Beautiful Soup. 
+
+- Calls the [World Weather Online API](https://www.worldweatheronline.com/developer/api/) to get the maximum and minimum temperatures for each day of 2019. Then, finds the highest maximum temperature, the lowest minimum temperature, and the dates that they occured for 2019.
+
+### Plotly
+
+- Uses javascript, d3, and Plotly to plot the hottest and coldest day of the selected year
+
+- Creates a grouped bar chart that compares the crime count per crime code for the hottest and coldest day of the selected year
+
+- Creates a line graph of the crime count per area of LA of the selected year. A red line indicates that the crime count on the hottest day is greater than the crime count on the coldest day in the corresponding area of LA. A blue line indicates that the crime count on the coldest day is greater than the crime count on the hottest day in the corresponding area of LA
+
+- Creates a time series plot of the crime count per the time of day of the hottest and coldest days of the selected year. Uses a 24-hour clock to show the changes in crime count from time 0 to time 2400
+
+### Leaflet
+
+- Displays a heatmap of the crime count on the hottest and coldest day of the selected year
+
+### HTML Navigation
+
 Select a year from 2010-2019 and visualize the data.
 
 
