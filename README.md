@@ -37,7 +37,10 @@ As time goes on, you cycle through the seasons and have a strange feeling that m
 
 ### Leaflet
 
-- Displays a heatmap of the crime count on the hottest and coldest day of the selected year
+- Displays a heatmap of the crime count on the hottest and coldest day of the selected year. User can choose whether to display the heat map for hottest day or the coldest day.
+
+
+- Displays map of LA with markers of the location of the crime for both the hottest and coldest day. User can choose any year(s) they want to display on the map. On hover, the marker shows the crime description, the military time of the time of occurrence, and the date that the crime occurred.
 
 ### HTML Navigation
 
