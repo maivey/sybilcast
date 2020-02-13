@@ -720,6 +720,7 @@ function byArea(dataHot,dataCold) {
         // Set the layout for the graph and for each line
         var layout = {
             title : 'Count of Crimes by Area',
+            autosize: true,
             height:1000,
             showlegend:false,
             yaxis : {
@@ -976,6 +977,7 @@ window.onresize = function() {
     var myDiv1 = document.getElementById('time-graph')
     Plotly.relayout(myDiv1, {
       width:myDiv1.clientWidth
+    //   'xaxis.autorange': true
     });
     var myDiv2 = document.getElementById('horibar')
     Plotly.relayout(myDiv2, {

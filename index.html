@@ -47,7 +47,9 @@
 <section class="clean-block clean-hero box-shadow" style="background-image: url(&quot;assets/img/crime_index.jpg&quot;);color: rgba(116, 9, 255, 0.507);height: 500px;" id="goto-home">
     <div class="text">
         
-        <h1 class="textshadow" style="font-size: 100px; color: rgba(255, 255, 255, 0.904);">SYBILCAST</h1>
+        <!-- <h1 class="textshadow" id = "main-sybil" style="font-size: 100px; color: rgba(255, 255, 255, 0.904);">SYBILCAST</h1> -->
+        <h1 class="textshadow" style="font-size: 10vw; color: rgba(255, 255, 255, 0.904);">SYBILCAST</h1>
+
         <h5 class="textshadow" style="color: rgba(255, 255, 255, 0.904);">Coded_Predictive_Crime_Trends</h4>
     </div>
 </section>
@@ -81,7 +83,10 @@
         </div>
     </section>
 
-    <section class="clean-block clean-hero box-shadow" style="background-image: url(&quot;assets/img/cold.jpg&quot;);color: rgba(9, 75, 255, 0.6);height: 118px;">
+    <!-- <section class="clean-block clean-hero box-shadow" style="background-image: url(&quot;assets/img/cold.jpg&quot;);color: rgba(9, 75, 255, 0.6);height: 118px;"> -->
+    <!-- Change the width (delete width so it can be responsive) -->
+    <section class="clean-block clean-hero box-shadow" style="background-image: url(&quot;assets/img/cold.jpg&quot;);color: rgba(9, 75, 255, 0.6);">
+
         <div class="text">
             <h2 class="textshadow">Curious if crime falls when the tempearture gets low?</h2>
         </div>
@@ -95,7 +100,10 @@
         </div>
     </section>
 
-    <section class="clean-block clean-hero box-shadow" style="background-image: url(&quot;assets/img/hot3.jpg&quot;);color: rgba(126, 19, 19, 0.767);height: 118px;">
+    <!-- <section class="clean-block clean-hero box-shadow" style="background-image: url(&quot;assets/img/hot3.jpg&quot;);color: rgba(126, 19, 19, 0.767);height: 118px;"> -->
+    <!-- Change the width (delete width so it can be responsive) -->
+    <section class="clean-block clean-hero box-shadow" style="background-image: url(&quot;assets/img/hot3.jpg&quot;);color: rgba(126, 19, 19, 0.767);">
+
         <div class="text">
             <h2>Wonder if felony rises when the heat gets high?</h2>
         </div>
@@ -156,21 +164,23 @@
 
                     <div class="col-md-6 col-lg-6 col-sm-6">
                         <!-- GRAPH 2 -->
-                        <div id = "area-graph" class="col-md-12 col-lg-12 col-sm-12"></div>
+                        <div id = "area-graph" class="col-md-12 col-lg-12 col-sm-12"></div> <!--class="col-md-12 col-lg-12 col-sm-12"-->
                     </div>
                 </div>
 
                 <!-- GRAPH 3 -->
                 <div class = "row justify-content-center">
                     <div style='margin-top:30px' class="col-md-12 col-lg-12 col-sm-12">
-                        <div id = "time-graph" class="col-md-12 col-lg-12 col-sm-12"></div>
+                        <div id = "time-graph" ></div> <!--class="col-md-12 col-lg-12 col-sm-12"-->
                     </div>
                 </div>
 
                 <!-- MAP - Map with Markers -->
-                <div class = "row">
+                <div class = "row justify-content-center">
                     <div style='margin-top:30px' class="col-md-12 col-lg-12 col-sm-12">
-                        <div id = "map" style="width: 1000px; height: 600px" class="col-md-12 col-lg-12 col-sm-12"></div>
+                        <div id = "map" style = "height: 600px" class="col-md-12 col-lg-12 col-sm-12"></div>
+
+                        <!-- <div id = "map" style="width: 1000px; height: 600px" class="col-md-12 col-lg-12 col-sm-12"></div> -->
                         <p>Marker Map</p>
                     </div>
                 </div>
@@ -178,7 +188,9 @@
                 <!-- MAP - Map with Heatmap -->
                 <div class = "row">
                     <div style='margin-top:30px' class="col-md-12 col-lg-12 col-sm-12">
-                        <div id = "heatmap" style="width: 1000px; height: 600px" class="col-md-12 col-lg-12 col-sm-12"></div>
+                        <div id = "heatmap" style="height: 600px" class="col-md-12 col-lg-12 col-sm-12"></div>
+
+                        <!-- <div id = "heatmap" style="width: 1000px; height: 600px" class="col-md-12 col-lg-12 col-sm-12"></div> -->
                         <p>Heat Map</p>
                     </div>
                 </div>
@@ -267,10 +279,10 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-md-3 offset-md-4 mx-auto">
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 offset-md-4 mx-auto">
                     <h5>Want to contribute?</h5>
                     <ul>
-                        <li class="text-left"><a href="https://github.com/dweidash/project-02-sybilcast">Join the Github!</a></li>
+                        <li class="text-center"><a href="https://github.com/dweidash/project-02-sybilcast">Join the Github!</a></li>
                     </ul>
                     <br>
                 </div>
